@@ -1229,8 +1229,9 @@ Live Stream Style
   border-radius: 23px;
   color: #fff;
   font-size: 14px;
-  right: 50px;
-  top: 50px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .live-stream .hover-effect ul {
