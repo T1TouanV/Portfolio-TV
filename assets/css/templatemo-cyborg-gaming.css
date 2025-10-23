@@ -1754,3 +1754,8 @@ body {
     width: 16%;
   }
 }
+
+img.responsive {
+  max-width: 25%;
+  height: auto;
+}
