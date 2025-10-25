@@ -1643,7 +1643,6 @@ Responsive Style
 
 body {
   overflow-x: hidden;
-  padding-top: 80px;
 }
 
 @media (max-width: 767px) {
@@ -1742,4 +1741,8 @@ body {
 img.responsive {
   max-width: 25%;
   height: auto;
+}
+
+.article-pages {
+  padding-top: 80px;
 }
