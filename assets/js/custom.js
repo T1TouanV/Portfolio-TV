@@ -24,16 +24,15 @@
     });
 
 	$(window).scroll(function() {
-		var scroll = $(window).scrollTop();
-		var box = $('.header-text').height() || 0; // <-- valeur par défaut
-		var header = $('header').height();
+	  var scroll = $(window).scrollTop();
+	  var box = $('.header-text').height();
+	  var header = $('header').height();
 
-		// Si pas de .header-text, active sticky dès qu’on scrolle un peu
-		if (scroll >= box - header || box === 0) {
-			$("header").addClass("background-header");
-		} else {
-			$("header").removeClass("background-header");
-		}
+	  if (scroll >= box - header) {
+	    $("header").addClass("background-header");
+	  } else {
+	    $("header").removeClass("background-header");
+	  }
 	});
 	
 	$('.filters ul li').click(function(){
