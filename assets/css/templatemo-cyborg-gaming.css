@@ -1643,6 +1643,7 @@ Responsive Style
 
 body {
   overflow-x: hidden;
+  padding-top: 80px;
 }
 
 @media (max-width: 767px) {
