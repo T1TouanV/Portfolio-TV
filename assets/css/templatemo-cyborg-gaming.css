@@ -619,6 +619,11 @@ Header Style
 
 .header-area.header-sticky {
   min-height: 70px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
 }
 
 .header-area.header-sticky .nav li a.active {
@@ -1741,8 +1746,4 @@ body {
 img.responsive {
   max-width: 25%;
   height: auto;
-}
-
-.article-pages {
-  padding-top: 500px;
 }
