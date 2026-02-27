@@ -78,53 +78,50 @@ https://templatemo.com/tm-579-cyborg-gaming
     <div class="col-lg-12">
       <div class="page-content">
         <div class="heading-section">
-          <h4><em>Projet GLPI</em> Installation et configuration</h4>
+          <h4><em>Veille Informatique</em> Sauvegardes UrBackup et stratégie 3-2-1-1-0</h4>
           <div>
             <h5>Objectif</h5>
             <div>
-              <p>Dans le cadre du Bloc 1 – Support et mise à disposition de services informatiques, j’ai réalisé l’installation de GLPI en environnement local. L’objectif était de découvrir un outil de gestion de parc informatique et de tickets afin de comprendre comment centraliser les demandes d’assistance des utilisateurs.</p>
+              <p>Dans le cadre du Bloc 1 – Support et mise à disposition de services informatiques, je me suis intéressé aux bonnes pratiques de sauvegarde des données. L’objectif était de comprendre la stratégie recommandée 3-2-1-1-0 et d’étudier la solution UrBackup pour mettre en place des sauvegardes sécurisées et fiables.</p>
             </div>
           </div>
           <div>
-            <h5>Installation de l’environnement</h5>
+            <h5>Présentation de la stratégie 3-2-1-1-0</h5>
             <div>
-              <p>Pour installer GLPI, j’ai d’abord mis en place un environnement serveur avec une machine virtuelle. J’ai utilisé un serveur web Apache, une base de données MySQL ainsi que PHP pour assurer le bon fonctionnement de l’application.</p></br>
-              <p>Après avoir téléchargé GLPI, j’ai copié les fichiers dans le répertoire du serveur web. J’ai ensuite créé une base de données dédiée à GLPI et configuré les accès avec un utilisateur spécifique. L’installation s’est faite via l’interface web en suivant les différentes étapes proposées par l’assistant.</p></br>
-              <p>Image : Interface d’installation de GLPI</p>
-              <img src="assets/images/Installation-de-GLPI.png" class="responsive" >
-              <p>Figure 1 – Assistant d’installation et vérification des prérequis.</p>
+              <p>La stratégie 3-2-1-1-0 est une méthode recommandée pour garantir la sécurité des données en entreprise. Elle consiste à conserver 3 copies des données, sur 2 supports différents, dont 1 copie hors site. Le second « 1 » correspond à une copie immuable ou hors ligne afin de se protéger contre les ransomwares. Le « 0 » signifie qu’il ne doit y avoir aucune erreur lors de la vérification des sauvegardes.</p></br>
+              <p>Cette approche permet de réduire fortement les risques de perte de données en cas de panne matérielle, d’erreur humaine ou de cyberattaque.</p></br>
+              <p>Image : Schéma de la stratégie 3-2-1-1-0</p>
+              <img src="assets/images/32110.jpg" class="responsive">
+              <p>Figure 1 – Principe de sécurisation des sauvegardes selon la règle 3-2-1-1-0.</p>
             </div>
           </div>
           <div>
-            <h5>Configuration initiale</h5>
+            <h5>Découverte de la solution UrBackup</h5>
             <div>
-              <p>Une fois l’installation terminée, j’ai configuré les paramètres principaux de l’application. J’ai créé des comptes utilisateurs et défini différents profils comme administrateur, technicien et utilisateur.</p></br>
-              <p>J’ai découvert la gestion des tickets, qui permet aux utilisateurs de signaler un incident ou de faire une demande. Les techniciens peuvent ensuite suivre et traiter ces demandes depuis l’interface d’administration.</p></br>
-              <p>Image : Interface principale de GLPI</p>
-              <img src="assets/images/glpi2.png" class="responsive">
-              <p>Figure 2 – Tableau de bord après connexion administrateur.</p>
+              <p>UrBackup est une solution de sauvegarde client/serveur open source qui permet de sauvegarder automatiquement des postes de travail et des serveurs. Elle propose des sauvegardes complètes et incrémentielles, aussi bien pour les fichiers que pour les images système.</p></br>
+              <p>L’interface web permet d’administrer les clients, de planifier les sauvegardes et de vérifier leur état. UrBackup facilite ainsi la centralisation et le suivi des sauvegardes dans un réseau.</p></br>
+              <p>Image : Interface d’administration UrBackup</p>
+              <img src="assets/images/status_full.png" class="responsive">
+              <p>Figure 2 – Tableau de bord du serveur UrBackup.</p>
             </div>
           </div>
           <div>
-            <h5>Partie technique</h5>
+            <h5>Mise en pratique et intérêt pour le Bloc 1</h5>
             <div>
-              <p>GLPI permet également de gérer un inventaire du matériel informatique. J’ai ajouté manuellement des équipements comme des ordinateurs et des imprimantes afin de comprendre le fonctionnement du module de gestion de parc.</p></br>
-              <p>Ce projet m’a permis de voir comment un service informatique peut centraliser les incidents et organiser le suivi des interventions.</p></br>
-              <p>Image : Création d’un ticket</p>
-              <img src="assets/images/centreon-ticket-glpi.png" class="responsive">
-              <p>Figure 3 – Exemple d’un ticket créé par un utilisateur.</p>
+              <p>Dans un environnement de test, la mise en place d’UrBackup permet de comprendre l’importance de la planification des sauvegardes et du contrôle régulier des journaux. La vérification des sauvegardes est essentielle pour respecter le principe du « 0 erreur ».</p></br>
+              <p>Cette solution s’intègre parfaitement dans les missions du Bloc 1, notamment pour assurer la continuité de service et la protection du patrimoine informatique.</p></br>
             </div>
           </div>
           <div>
             <h5>Bilan</h5>
             <div>
-              <p>Ce projet m’a permis de comprendre l’importance d’un outil de gestion d’incidents dans une organisation. J’ai rencontré quelques difficultés lors de la configuration de la base de données, notamment sur les paramètres de connexion, mais j’ai réussi à les corriger.</p>
+              <p>Cette veille informatique m’a permis de mieux comprendre les enjeux liés à la protection des données et aux cybermenaces actuelles. La stratégie 3-2-1-1-0 constitue aujourd’hui une référence en matière de sauvegarde sécurisée.</p>
             </div>
           </div>
           <div>
             <h5>Conclusion</h5>
             <div>
-              <p>L’installation de GLPI m’a permis de découvrir un outil professionnel utilisé en entreprise pour la gestion du support informatique. Ce projet m’a aidé à mieux comprendre l’organisation d’un service d’assistance et le suivi des incidents. Je souhaite approfondir l’utilisation de GLPI, notamment avec l’ajout d’un agent d’inventaire automatique.</p>
+              <p>La mise en place d’une solution comme UrBackup associée à la stratégie 3-2-1-1-0 permet d’assurer la continuité d’activité et de limiter les risques de perte de données. Cette réflexion renforce l’importance du rôle du technicien informatique dans la prévention et la sécurisation des systèmes d’information.</p>
             </div>
           </div>
         </div>
@@ -132,7 +129,6 @@ https://templatemo.com/tm-579-cyborg-gaming
     </div>
   </div>
 </div>
-
   
   <footer>
     <div class="container">
